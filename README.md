@@ -11,7 +11,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [https://github.com/lallendevs/recipe-page-main]([https://your-solution-url.com](https://github.com/lallendevs/recipe-page-main))
+- Solution URL: [https://github.com/lallendevs/recipe-page-main]([https://your-solution-url.com](https://github.com/lallendevs/recipe-page-main/)
 - Live Site URL: [https://lallendevs.github.io/recipe-page-main/](https://lallendevs.github.io/recipe-page-main/)
 
 ### Continued development
