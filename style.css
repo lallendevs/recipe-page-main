@@ -1,3 +1,129 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Young-Serif";
+    src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+}
+
 body {
-background-color: brown 800: hsl(14, 45%, 36%);
+    background-color: hsl(30, 54%, 90%);
+    color: hsl(30, 10%, 34%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.recipe-card {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 750px;
+    padding: 40px;
+    border-radius: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+.recipe-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recipe-card h1, .recipe-card h2 {
+    font-family: 'Young-Serif', serif;
+    font-weight: 400;
+}
+
+.preparation-time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.preparation-time h2 {
+    font-family: Outfit, sans-serif;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+    margin: 0;
+}
+
+.preparation-time li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+li {
+  padding-left: 20px; 
+  margin-bottom: 0.55em;
+}
+
+hr {
+    margin-top: 2em;   
+    color: hsl(30, 10%, 34%); 
+}
+
+.ingredients h2, .instructions h2, .nutrition h2 {
+  color: hsl(14, 45%, 36%);
+  font-weight: 500;
+}
+
+h1 { 
+    color: hsl(24, 5%, 18%);
+    font-weight: bold;
+}
+
+.nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.nutrition th, .nutrition td {
+    border-bottom: 1px solid hsl(30, 18%, 87%); 
+    padding: 1em;
+}
+
+.nutrition td {
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition th {
+    font-weight: normal;
+}
+
+tr:last-child th, tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 600px) {
+    
+    main {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .recipe-image img {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        width: 100vw;  
+    }
 }
